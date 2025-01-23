@@ -14,4 +14,10 @@ let isLoggedIn= false
 
 //object 
 
-console.log(typeof "mradul");
+// console.log(typeof "mradul"); 
+
+let score = "33"
+console.log(typeof score);
+let x= Number(score)
+console.log(typeof x);
+console.log(x);
