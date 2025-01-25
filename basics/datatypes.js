@@ -21,3 +21,24 @@ console.log(typeof score);
 let x= Number(score)
 console.log(typeof x);
 console.log(x);
+
+// primtive 
+// 7 types : string , number , boolean, null, undefined, symbol, bigInt
+// 
+// reference 
+// arrays , objects, functions
+
+// arrays
+const heros = ["ironman", "thor", "hulk"];
+
+// objects
+let valo ={
+    name : "don",
+    age : 18
+}
+console.log(valo);
+
+const myfunc= function () {
+    console.log("helloe");
+    
+}
