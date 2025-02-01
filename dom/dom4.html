@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 4</title>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</head>
+<body>
+    <script>
+        function addOptiLanguage (langname) {
+            const li = document.createElement('li')
+            const addText= document.createTextNode(langname)
+            li.appendChild(addText)
+            document.querySelector('.language').appendChild(li)
+        }
+        addOptiLanguage("hi")
+        addOptiLanguage("him")
+       const secondLang= document.querySelector("li:nth-child(2)")
+         secondLang.innerHTML = "mojo"
+    //   const newLi=  document.createElement ('Li')
+    //   newLi.textContent = "mojo" 
+    //   secondLang.replaceWith(newLi)
+
+      const lastLang= document.querySelector("li:last-child")
+      lastLang.remove()
+    </script>
+</body>
+</html>
