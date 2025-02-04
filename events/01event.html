@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COC</title>
+</head>
+<body>
+    <h1>Javascript new</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    const change =function() {document.querySelector("h1").innerHTML = "JS" 
+}
+    const changeNew = setTimeout(change, 4000)
+    document.querySelector("#stop").addEventListener('click', function(){
+        clearTimeout(changeNew)
+    })
+</script>
+</html>
